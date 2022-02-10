@@ -31,12 +31,12 @@ showHeroes(data);
 
 const form = document.getElementById('form')
 
-form.addEventListener('submit', (e)=> {
+form.addEventListener('submit', (e.getElementById)=> {
     e.preventDefault()
 
     const search = document.querySelector('#search').value;
 
-    const resultado = data.filter(heroe=> heroe.superheroe.toLocaleLowerCase().incluides(search.toLocaleLowerCase()) || heroe.name.toLocaleLowerCase().incluides(search.toLocaleLowerCase()))
+    const result = data.filter(heroe=> heroe.superheroe.toLocaleLowerCase().incluides(search.toLocaleLowerCase()) || heroe.name.toLocaleLowerCase().incluides(search.toLocaleLowerCase()))
 
-    showHeroes(resultado);
+    showHeroes(result);
 })
